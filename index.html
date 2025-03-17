@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>招行×新东方 | 新高考下的多元选择</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css">
+    <style>
+        :root {
+            --theme-blue: #0066b3; /* 招行品牌蓝 */
+            --theme-orange: #ff8a00; /* 新东方品牌橙 */
+        }
+        body {
+            font-family: "Microsoft Yahei", sans-serif;
+            background: #f5f7fa;
+        }
+        .banner {
+            background: linear-gradient(135deg, var(--theme-blue), var(--theme-orange));
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .schedule-card {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .speaker-card {
+            display: flex;
+            align-items: center;
+            margin: 15px;
+            padding: 10px;
+            background: white;
+            border-radius: 8px;
+        }
+        .speaker-photo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        .gift-slide {
+            text-align: center;
+            padding: 10px;
+        }
+        .gift-img {
+            width: 45%;
+            margin: 5px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+<!-- 顶部横幅 -->
+<div class="banner">
+    <h1>新高考下的多元选择</h1>
+    <p>🏦 招商银行雁翔路支行 × 🎓 新东方教育</p >
+    <p>📅 3月21日 14:30-17:00</p >
+</div>
+
+<!-- 活动流程 -->
+<div class="schedule-card">
+    <h3>🗓 活动流程</h3>
+    <ul>
+        <li>14:00-14:30 活动签到</li>
+        <li>14:30-15:10 新高考政策解析 - 徐夏玉</li>
+        <li>15:20-16:00 留学规划讲座 - 田忆</li>
+        <li>16:00-17:00 答疑交流环节</li>
+    </ul>
+</div>
+
+<!-- 嘉宾介绍 -->
+<div class="schedule-card">
+    <h3>🎤 主讲嘉宾</h3>
+    <div class="speaker-card">
+        <img src="media/image1.jpg" class="speaker-photo" alt="徐夏玉">
+        <div>
+            <h4>徐夏玉 老师</h4>
+            <p>新东方金牌讲师/全球生涯规划师<br>
+                高级学业规划指导师/高考志愿专家</p >
+        </div>
+    </div>
+    <div class="speaker-card">
+        <img src="media/image2.jpg" class="speaker-photo" alt="田忆">
+        <div>
+            <h4>田忆 顾问</h4>
+            <p>澳新留学资深专家<br>
+                十年海外教育规划经验<br>
+                名校申请成功率98%</p >
+        </div>
+    </div>
+</div>
+
+<!-- 伴手礼轮播 -->
+<div class="swiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide gift-slide">
+            <img src="media/image3.png" class="gift-img">
+            <img src="media/image4.png" class="gift-img">
+        </div>
+        <div class="swiper-slide gift-slide">
+            <img src="media/image3.png" class="gift-img">
+            <img src="media/image6.png" class="gift-img">
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+
+<!-- 底部导航 -->
+<div style="text-align:center; padding:20px;">
+    <button onclick="window.location.href='tel:95555'"
+            style="background:var(--theme-blue); color:white; padding:12px 30px; border:none; border-radius:25px;">
+        📞 立即咨询
+    </button>
+    <p style="color:#666; margin-top:15px;">📍 西安市雁翔路招商银行支行</p >
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+<script>
+    new Swiper('.swiper', {
+        loop: true,
+        pagination: { el: '.swiper-pagination' },
+        autoplay: { delay: 3000 },
+    });
+</script>
+</body>
+</html>
